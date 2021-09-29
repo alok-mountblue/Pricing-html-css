@@ -5,7 +5,6 @@
   margin: 0;
   padding: 0;
   list-style: none;
-  gap: 20px;
 }
 
 body {
@@ -13,7 +12,7 @@ body {
   font-family: 'Montserrat', sans-serif;
   background-image: url('./images/bg-top.svg'), url('./images/bg-bottom.svg');
   background-color: #f0f1ff;
-  height: 700px;
+  height: 600px;
   background-size: 400;
   background-repeat: no-repeat, no-repeat;
   background-position: right, bottom left;
@@ -28,10 +27,12 @@ body {
 
 .ToggleBtn {
   margin: 20px;
+  padding: 10px;
   font-size: 15px;
   color: hsl(233, 13%, 49%);
   display: flex;
   justify-content: center;
+  gap: 10px;
 }
 
 /* The switch - the box around the slider */
@@ -119,7 +120,7 @@ input:checked + .slider:before {
 }
 
 .plan-available .professional {
-  background: hsl(237, 63%, 64%);
+  background: linear-gradient(to right, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
   color: white;
   height: 400px;
 }
@@ -133,9 +134,6 @@ input:checked + .slider:before {
 
 .plan-available .plans .price {
   color: hsl(232, 13%, 33%);
-}
-.plan-available .plans .price:hover {
-  color: whitesmoke;
 }
 
 .plan-available .plans .dollar {
@@ -158,15 +156,10 @@ input:checked + .slider:before {
 .plan-available .professional .btn {
   display: block;
   background: hsl(237, 63%, 64%);
-  padding: 10px;
+  padding: 15px;
   margin-top: 15px;
   color: white;
   border-radius: 5px;
-}
-.plan-available .plans:hover {
-  background: hsl(237, 63%, 64%);
-  color: hsl(240, 100%, 99%);
-  border: 1px solid hsl(237, 63%, 64%);
 }
 
 .plan-available .plans .btn:hover {
