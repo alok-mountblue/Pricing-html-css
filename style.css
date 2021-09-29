@@ -106,8 +106,8 @@ input:checked + .slider:before {
 
 .plan-available .plans,
 .plan-available .professional {
-  width: 350px;
-  height: 400px;
+  width: 300px;
+  height: 350px;
   border-radius: 10px;
   box-shadow: 8px 8px 8px hsl(234, 14%, 74%);
   text-align: center;
@@ -134,16 +134,23 @@ input:checked + .slider:before {
 .plan-available .plans .price {
   color: hsl(232, 13%, 33%);
 }
+.plan-available .plans .price:hover {
+  color: whitesmoke;
+}
 
-.plan-available .plans .dollar,
-.plan-available .professional .doller {
-  font-size: 20px;
+.plan-available .plans .dollar {
+  font-size: 30px;
+  vertical-align: middle;
+}
+
+.plan-available .professional .price .dollar {
+  font-size: 30px;
   vertical-align: middle;
 }
 
 .plan-available .plans .list .item,
 .plan-available .professional .list .item {
-  padding: 25px;
+  padding: 20px;
   border-bottom: 1px solid hsl(234, 14%, 74%);
 }
 
@@ -152,21 +159,25 @@ input:checked + .slider:before {
   display: block;
   background: hsl(237, 63%, 64%);
   padding: 10px;
-  margin-top: 35px;
+  margin-top: 15px;
   color: white;
   border-radius: 5px;
 }
+.plan-available .plans:hover {
+  background: hsl(237, 63%, 64%);
+  color: hsl(240, 100%, 99%);
+  border: 1px solid hsl(237, 63%, 64%);
+}
 
 .plan-available .plans .btn:hover {
-  background: white;
+  background: rgb(232, 234, 236);
   color: hsl(237, 63%, 64%);
   border: 1px solid hsl(233, 13%, 49%);
-  font-weight: 900;
 }
 
 .plan-available .plans .btn-blue,
 .plan-available .professional .btn-blue {
-  background: white;
+  background: rgb(254, 254, 255);
   color: hsl(237, 63%, 64%);
 }
 
@@ -175,4 +186,10 @@ input:checked + .slider:before {
   background-color: hsl(237, 63%, 64%);
   color: hsl(240, 78%, 98%);
   border: 1px solid hsl(240, 78%, 98%);
+}
+
+@media screen and (max-width: 375px) {
+  .plan-available {
+    flex-direction: column;
+  }
 }
