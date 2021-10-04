@@ -1,13 +1,12 @@
 * {
-  text-align: center;
-  font-size: 15px;
-  font-weight: 700;
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
 body {
+  font-size: 15px;
+  font-weight: 700;
   text-align: center;
   font-family: 'Montserrat', sans-serif;
   background-image: url('./images/bg-top.svg'), url('./images/bg-bottom.svg');
@@ -29,7 +28,7 @@ body {
   margin: 15px;
   padding: 5px;
   font-size: 15px;
-  color: hsl(233, 13%, 49%);
+  color: hsl(231, 5%, 73%);
   display: flex;
   justify-content: center;
   gap: 10px;
@@ -108,11 +107,15 @@ input:checked + .slider:before {
 .plan-available .plans,
 .plan-available .professional {
   width: 300px;
-  height: 350px;
+  height: 370px;
   border-radius: 10px;
-  box-shadow: 8px 8px 8px hsl(234, 14%, 74%);
+  box-shadow: 5px 5px 5px hsl(234, 14%, 74%);
   text-align: center;
   padding: 20px;
+}
+
+.plan-available .professional .content {
+  padding: 13px;
 }
 .plan-available .plans {
   background-color: white;
@@ -120,7 +123,7 @@ input:checked + .slider:before {
 }
 
 .plan-available .professional {
-  background: linear-gradient(to right, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+  background: linear-gradient(to left, hsl(237, 63%, 64%), hsl(236, 72%, 79%));
   color: white;
   height: 400px;
 }
@@ -129,7 +132,7 @@ input:checked + .slider:before {
 .plan-available .professional .price {
   font-size: 50px;
   padding: 10px;
-  border-bottom: 1px solid hsl(231, 13%, 89%);
+  border-bottom: 1px solid #eeeef1;
 }
 
 .plan-available .plans .price {
@@ -149,36 +152,28 @@ input:checked + .slider:before {
 .plan-available .plans .list .item,
 .plan-available .professional .list .item {
   padding: 20px;
-  border-bottom: 1px solid #dddde6;
+  border-bottom: 1px solid #eeeef1;
+}
+
+.plan-available .plans .button,
+.plan-available .professional .button {
+  margin-top: 30px;
 }
 
 .plan-available .plans .btn,
-.plan-available .professional .btn {
+.plan-available .professional .btn-blue {
   display: block;
   background: hsl(237, 63%, 64%);
   padding: 15px;
   margin-top: 15px;
+  text-decoration: none;
   color: white;
   border-radius: 5px;
 }
 
-.plan-available .plans .btn:hover {
-  background: rgb(232, 234, 236);
-  color: hsl(237, 63%, 64%);
-  border: 1px solid hsl(233, 13%, 49%);
-}
-
-.plan-available .plans .btn-blue,
 .plan-available .professional .btn-blue {
   background: rgb(254, 254, 255);
   color: hsl(237, 63%, 64%);
-}
-
-.plan-available .plans .btn-blue:hover,
-.plan-available .professional .btn-blue:hover {
-  background-color: hsl(237, 63%, 64%);
-  color: hsl(240, 78%, 98%);
-  border: 1px solid hsl(240, 78%, 98%);
 }
 
 @media screen and (max-width: 375px) {
